@@ -3,62 +3,160 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio — tembue2</title>
+  <meta name="description" content="Portfólio de Sheldon Tembue — Desenvolvedor de Aplicações Web (PHP/Laravel, Vue, React, Node.js)." />
+  <title>Sheldon Tembue — Desenvolvedor de Aplicações Web</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="hero">
     <nav class="nav">
-      <a href="#" class="brand">tembue2</a>
+      <a href="#" class="brand">Sheldon&nbsp;Tembue</a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
       <ul class="nav-links">
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
+
     <div class="hero-content">
-      <h1>Olá, eu sou <span>Tembue</span></h1>
-      <p>Desenvolvedor — construo aplicações web.</p>
-      <a href="#projetos" class="btn">Ver projetos</a>
+      <p class="hero-eyebrow">Olá, eu sou</p>
+      <h1>Sheldon <span>Tembue</span></h1>
+      <p class="hero-sub">Desenvolvedor de Aplicações Web</p>
+      <p class="hero-desc">
+        Construo sistemas completos — do banco de dados à interface — para negócios reais.
+      </p>
+      <div class="hero-actions">
+        <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+        <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
+      </div>
     </div>
   </header>
 
   <main>
+    <!-- SOBRE -->
     <section id="sobre" class="section">
-      <h2>Sobre</h2>
-      <p>Escreva aqui uma breve apresentação sobre você, suas habilidades e interesses.</p>
-    </section>
-
-    <section id="projetos" class="section">
-      <h2>Projetos</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Projeto 1</h3>
-          <p>Descrição curta do projeto.</p>
-          <a href="#">Ver mais →</a>
-        </article>
-        <article class="card">
-          <h3>Projeto 2</h3>
-          <p>Descrição curta do projeto.</p>
-          <a href="#">Ver mais →</a>
-        </article>
-        <article class="card">
-          <h3>Projeto 3</h3>
-          <p>Descrição curta do projeto.</p>
-          <a href="#">Ver mais →</a>
-        </article>
+      <h2 class="section-title">Sobre</h2>
+      <div class="about">
+        <p>
+          Sou desenvolvedor de aplicações web focado em entregar sistemas completos e prontos
+          para produção. Trabalho tanto no back-end quanto no front-end, usando
+          <strong>PHP/Laravel</strong> e <strong>JavaScript</strong> (<strong>Vue</strong> e
+          <strong>React</strong>) com <strong>Node.js</strong>.
+        </p>
+        <p>
+          Já construí soluções de gestão para áreas variadas — padaria, comércio, aduana e
+          folha de pagamento — sempre com atenção a código limpo, testes e boas práticas de
+          deploy. Gosto de transformar processos do dia a dia em software que funciona.
+        </p>
       </div>
     </section>
 
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+      <h2 class="section-title">Projetos</h2>
+      <div class="grid">
+
+        <article class="card">
+          <h3>Sistema de Gestão de Padaria</h3>
+          <p class="card-desc">
+            Plataforma full-stack para padarias: produção, estoque, vendas (PDV), financeiro e
+            folha de pagamento. Controle de acesso por papéis e suporte a PWA.
+          </p>
+          <ul class="tags">
+            <li>React</li><li>Node.js</li><li>Fastify</li><li>Prisma</li><li>PostgreSQL</li>
+          </ul>
+          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto →</a>
+        </article>
+
+        <article class="card">
+          <h3>SHT — API Aduaneira</h3>
+          <p class="card-desc">
+            API em Laravel para gestão aduaneira/fronteiriça, com autenticação via Sanctum,
+            exportação em PDF e infraestrutura de deploy com Docker e Render.
+          </p>
+          <ul class="tags">
+            <li>PHP</li><li>Laravel</li><li>MySQL</li><li>Docker</li>
+          </ul>
+          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto →</a>
+        </article>
+
+        <article class="card">
+          <h3>Gerador de Currículos (CV Online)</h3>
+          <p class="card-desc">
+            Aplicação PWA para criar e exportar currículos em PDF: 18 modelos, pré-visualização
+            em tempo real, importação/exportação de dados e funcionamento offline.
+          </p>
+          <ul class="tags">
+            <li>Vue 3</li><li>Pinia</li><li>Tailwind</li><li>Vite</li>
+          </ul>
+          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto →</a>
+        </article>
+
+        <article class="card">
+          <h3>Sistema de Loja (PDV)</h3>
+          <p class="card-desc">
+            Controle de estoque, ponto de venda e caixa para loja única, com travamento
+            transacional de estoque e relatórios em PDF/CSV.
+          </p>
+          <ul class="tags">
+            <li>Laravel</li><li>Vue 3</li><li>Chart.js</li><li>MySQL</li>
+          </ul>
+          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h4>Back-end</h4>
+          <ul class="tags">
+            <li>PHP</li><li>Laravel</li><li>Node.js</li><li>Fastify</li><li>Prisma</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Front-end</h4>
+          <ul class="tags">
+            <li>JavaScript</li><li>Vue.js</li><li>React</li><li>Tailwind CSS</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Dados &amp; DevOps</h4>
+          <ul class="tags">
+            <li>PostgreSQL</li><li>MySQL</li><li>Docker</li><li>Git</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
     <section id="contato" class="section">
-      <h2>Contato</h2>
-      <p>Email: <a href="mailto:darsonnjauala@gmail.com">darsonnjauala@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/tembue2">github.com/tembue2</a></p>
+      <h2 class="section-title">Contato</h2>
+      <p class="contact-intro">Vamos conversar? Fico feliz em receber mensagens sobre projetos e oportunidades.</p>
+      <div class="contact-links">
+        <a href="mailto:hthembwe46@gmail.com" class="contact-item">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">hthembwe46@gmail.com</span>
+        </a>
+        <a href="https://github.com/tembue2" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/tembue2</span>
+        </a>
+        <a href="https://www.linkedin.com/in/sheldon-tembue-a0a84b200" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">in/sheldon-tembue-a0a84b200</span>
+        </a>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>&copy; <span id="ano"></span> tembue2. Todos os direitos reservados.</p>
+    <p>&copy; <span id="ano"></span> Sheldon Tembue · Desenvolvedor de Aplicações Web</p>
   </footer>
 
   <script src="js/main.js"></script>
