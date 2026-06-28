@@ -79,6 +79,10 @@ strong { color: var(--text); font-weight: 600; }
   background: linear-gradient(135deg, var(--primary), var(--primary-2));
   box-shadow: var(--shadow-sm);
 }
+
+/* Ícones dentro de botões e links */
+.btn i, .card-link i, .hero-card-links i { font-size: 1em; }
+.btn { gap: 0.5rem; }
 .nav-cta:hover { opacity: 0.92; }
 
 .nav-toggle {
@@ -161,10 +165,12 @@ strong { color: var(--text); font-weight: 600; }
 
 .hero-stack { display: flex; flex-wrap: wrap; gap: 0.6rem; list-style: none; margin-top: 2rem; }
 .hero-stack li {
+  display: inline-flex; align-items: center; gap: 0.45rem;
   font-size: 0.82rem; font-weight: 600; color: var(--muted);
   background: var(--surface); border: 1px solid var(--border);
   padding: 0.35rem 0.8rem; border-radius: 8px;
 }
+.hero-stack li i { font-size: 1.05rem; }
 
 /* Hero card */
 .hero-card {
@@ -205,6 +211,7 @@ strong { color: var(--text); font-weight: 600; }
   background: var(--bg); border: 1px solid var(--border); color: var(--text);
   transition: border-color 0.18s ease, color 0.18s ease;
 }
+.hero-card-links a { display: inline-flex; align-items: center; gap: 0.35rem; }
 .hero-card-links a:hover { border-color: var(--primary); color: var(--primary); }
 
 /* ---------- SECTIONS ---------- */
@@ -246,6 +253,7 @@ strong { color: var(--text); font-weight: 600; }
 .card-icon {
   width: 52px; height: 52px; border-radius: 14px;
   display: grid; place-items: center; font-size: 1.6rem;
+  color: var(--primary);
   background: linear-gradient(135deg, var(--ring), rgba(14,165,233,0.12));
   margin-bottom: 1rem;
 }
@@ -254,19 +262,23 @@ strong { color: var(--text); font-weight: 600; }
 .card-link {
   font-weight: 600; display: inline-flex; align-items: center; gap: 0.4rem;
 }
-.card-link span { transition: transform 0.2s ease; }
-.card-link:hover span { transform: translateX(4px); }
+.card-link i { transition: transform 0.2s ease; }
+.card-link:hover i { transform: translateX(4px); }
 
 /* ---------- TAGS ---------- */
 .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; margin-bottom: 1.25rem; }
 .tags li {
+  display: inline-flex; align-items: center; gap: 0.4rem;
   font-size: 0.78rem; font-weight: 600;
-  padding: 0.28rem 0.7rem;
-  background: var(--bg);
-  color: var(--muted);
+  padding: 0.3rem 0.75rem;
+  background: var(--surface);
+  color: var(--text);
   border: 1px solid var(--border);
   border-radius: 999px;
 }
+.tags li i { font-size: 1.05rem; }
+/* Logos monocromáticos (sem variante "colored") herdam a cor do texto */
+.tags li i.devicon-fastify-plain { color: var(--text); }
 
 /* ---------- SKILLS ---------- */
 .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
@@ -279,15 +291,15 @@ strong { color: var(--text); font-weight: 600; }
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .skill-group:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
-.skill-head { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.1rem; }
-.skill-emoji {
+.skill-head { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 1.1rem; }
+.skill-head i {
   width: 38px; height: 38px; border-radius: 10px;
   display: grid; place-items: center; font-size: 1.2rem;
+  color: var(--primary);
   background: var(--bg); border: 1px solid var(--border);
 }
 .skill-group h4 { font-size: 1.05rem; }
 .skill-group .tags { margin-bottom: 0; }
-.skill-group .tags li { background: linear-gradient(135deg, var(--ring), rgba(14,165,233,0.1)); color: var(--primary); border-color: transparent; }
 
 /* ---------- CONTACT ---------- */
 .contact-intro { color: var(--muted); font-size: 1.1rem; max-width: 560px; margin-bottom: 2rem; }
@@ -302,7 +314,7 @@ strong { color: var(--text); font-weight: 600; }
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 .contact-item:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: transparent; }
-.contact-ic { font-size: 1.5rem; margin-bottom: 0.25rem; }
+.contact-ic { font-size: 1.6rem; color: var(--primary); margin-bottom: 0.25rem; line-height: 1; }
 .contact-label { color: var(--soft); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.6px; font-weight: 600; }
 .contact-value { color: var(--text); font-weight: 600; word-break: break-all; }
 
@@ -310,11 +322,8 @@ strong { color: var(--text); font-weight: 600; }
 .footer { text-align: center; padding: 3rem 1.5rem; border-top: 1px solid var(--border); color: var(--muted); }
 .footer-sub { color: var(--soft); font-size: 0.85rem; margin-top: 0.3rem; }
 
-/* ---------- REVEAL ANIMATION ---------- */
-.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
-.reveal.visible { opacity: 1; transform: none; }
+/* ---------- MOTION ---------- */
 @media (prefers-reduced-motion: reduce) {
-  .reveal { opacity: 1; transform: none; transition: none; }
   .wave { animation: none; }
   html { scroll-behavior: auto; }
 }

@@ -6,9 +6,16 @@
   <meta name="description" content="Portfólio de Sheldon Tembue — Desenvolvedor de Aplicações Web (PHP/Laravel, Vue, React, Node.js)." />
   <title>Sheldon Tembue — Desenvolvedor de Aplicações Web</title>
 
+  <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bibliotecas: ícones e animações -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -33,34 +40,34 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero-inner">
-        <div class="hero-text reveal">
+        <div class="hero-text" data-aos="fade-up">
           <p class="hero-eyebrow"><span class="wave">👋</span> Olá, eu sou</p>
           <h1>Sheldon Tembue</h1>
           <p class="hero-sub">Desenvolvedor de Aplicações Web</p>
           <p class="hero-desc">
-            Construo sistemas completos — do banco de dados à interface — para negócios reais,
+            Construo sistemas completos (do banco de dados à interface) para negócios reais,
             com foco em código limpo e pronto para produção.
           </p>
           <div class="hero-actions">
-            <a href="#projetos" class="btn btn-primary">Ver projetos</a>
-            <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
+            <a href="#projetos" class="btn btn-primary"><i class="bi bi-collection"></i> Ver projetos</a>
+            <a href="#contato" class="btn btn-ghost"><i class="bi bi-chat-dots"></i> Entrar em contato</a>
           </div>
           <ul class="hero-stack">
-            <li>PHP / Laravel</li>
-            <li>Vue &amp; React</li>
-            <li>Node.js</li>
+            <li><i class="devicon-laravel-original colored"></i> PHP / Laravel</li>
+            <li><i class="devicon-vuejs-plain colored"></i> Vue &amp; React</li>
+            <li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
           </ul>
         </div>
 
-        <div class="hero-card reveal">
+        <div class="hero-card" data-aos="fade-up" data-aos-delay="120">
           <div class="avatar">ST</div>
           <div class="hero-card-body">
             <p class="hero-card-name">Sheldon Tembue</p>
-            <p class="hero-card-role">Full-Stack Web Developer</p>
+            <p class="hero-card-role">Desenvolvedor Full-Stack</p>
             <div class="hero-card-links">
-              <a href="https://github.com/tembue2" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
-              <a href="https://www.linkedin.com/in/sheldon-tembue-a0a84b200" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-              <a href="mailto:hthembwe46@gmail.com" aria-label="Email">Email</a>
+              <a href="https://github.com/tembue2" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i> GitHub</a>
+              <a href="https://www.linkedin.com/in/sheldon-tembue-a0a84b200" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i> LinkedIn</a>
+              <a href="mailto:hthembwe46@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i> Email</a>
             </div>
           </div>
         </div>
@@ -69,11 +76,11 @@
 
     <!-- SOBRE -->
     <section id="sobre" class="section">
-      <div class="section-head reveal">
+      <div class="section-head" data-aos="fade-up">
         <span class="section-kicker">01 — Sobre</span>
         <h2 class="section-title">Quem sou eu</h2>
       </div>
-      <div class="about reveal">
+      <div class="about" data-aos="fade-up">
         <p>
           Sou desenvolvedor de aplicações web focado em entregar sistemas completos e prontos
           para produção. Trabalho tanto no back-end quanto no front-end, usando
@@ -90,62 +97,75 @@
 
     <!-- PROJETOS -->
     <section id="projetos" class="section">
-      <div class="section-head reveal">
+      <div class="section-head" data-aos="fade-up">
         <span class="section-kicker">02 — Portfólio</span>
         <h2 class="section-title">Projetos em destaque</h2>
       </div>
       <div class="grid">
 
-        <article class="card reveal">
-          <div class="card-icon">🥖</div>
+        <article class="card" data-aos="fade-up">
+          <div class="card-icon"><i class="bi bi-basket3"></i></div>
           <h3>Sistema de Gestão de Padaria</h3>
           <p class="card-desc">
             Plataforma full-stack para padarias: produção, estoque, vendas (PDV), financeiro e
             folha de pagamento, com controle de acesso por papéis e suporte a PWA.
           </p>
           <ul class="tags">
-            <li>React</li><li>Node.js</li><li>Fastify</li><li>Prisma</li><li>PostgreSQL</li>
+            <li><i class="devicon-react-original colored"></i> React</li>
+            <li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
+            <li><i class="devicon-fastify-plain"></i> Fastify</li>
+            <li><i class="devicon-prisma-original colored"></i> Prisma</li>
+            <li><i class="devicon-postgresql-plain colored"></i> PostgreSQL</li>
           </ul>
-          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto <span>→</span></a>
+          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto <i class="bi bi-arrow-right"></i></a>
         </article>
 
-        <article class="card reveal">
-          <div class="card-icon">🛃</div>
+        <article class="card" data-aos="fade-up" data-aos-delay="80">
+          <div class="card-icon"><i class="bi bi-truck"></i></div>
           <h3>SHT — API Aduaneira</h3>
           <p class="card-desc">
             API em Laravel para gestão aduaneira/fronteiriça, com autenticação via Sanctum,
             exportação em PDF e infraestrutura de deploy com Docker e Render.
           </p>
           <ul class="tags">
-            <li>PHP</li><li>Laravel</li><li>MySQL</li><li>Docker</li>
+            <li><i class="devicon-php-plain colored"></i> PHP</li>
+            <li><i class="devicon-laravel-original colored"></i> Laravel</li>
+            <li><i class="devicon-mysql-original colored"></i> MySQL</li>
+            <li><i class="devicon-docker-plain colored"></i> Docker</li>
           </ul>
-          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto <span>→</span></a>
+          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto <i class="bi bi-arrow-right"></i></a>
         </article>
 
-        <article class="card reveal">
-          <div class="card-icon">📄</div>
+        <article class="card" data-aos="fade-up" data-aos-delay="160">
+          <div class="card-icon"><i class="bi bi-file-earmark-person"></i></div>
           <h3>Gerador de Currículos (CV Online)</h3>
           <p class="card-desc">
             Aplicação PWA para criar e exportar currículos em PDF: 18 modelos, pré-visualização
             em tempo real, importação/exportação de dados e funcionamento offline.
           </p>
           <ul class="tags">
-            <li>Vue 3</li><li>Pinia</li><li>Tailwind</li><li>Vite</li>
+            <li><i class="devicon-vuejs-plain colored"></i> Vue 3</li>
+            <li><i class="devicon-vuejs-plain colored"></i> Pinia</li>
+            <li><i class="devicon-tailwindcss-original colored"></i> Tailwind</li>
+            <li><i class="devicon-vitejs-plain colored"></i> Vite</li>
           </ul>
-          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto <span>→</span></a>
+          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto <i class="bi bi-arrow-right"></i></a>
         </article>
 
-        <article class="card reveal">
-          <div class="card-icon">🛒</div>
+        <article class="card" data-aos="fade-up" data-aos-delay="240">
+          <div class="card-icon"><i class="bi bi-cart3"></i></div>
           <h3>Sistema de Loja (PDV)</h3>
           <p class="card-desc">
             Controle de estoque, ponto de venda e caixa para loja única, com travamento
             transacional de estoque e relatórios em PDF/CSV.
           </p>
           <ul class="tags">
-            <li>Laravel</li><li>Vue 3</li><li>Chart.js</li><li>MySQL</li>
+            <li><i class="devicon-laravel-original colored"></i> Laravel</li>
+            <li><i class="devicon-vuejs-plain colored"></i> Vue 3</li>
+            <li><i class="bi bi-bar-chart-fill" style="color:#ff6384"></i> Chart.js</li>
+            <li><i class="devicon-mysql-original colored"></i> MySQL</li>
           </ul>
-          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto <span>→</span></a>
+          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto <i class="bi bi-arrow-right"></i></a>
         </article>
 
       </div>
@@ -153,27 +173,37 @@
 
     <!-- SKILLS -->
     <section id="skills" class="section">
-      <div class="section-head reveal">
+      <div class="section-head" data-aos="fade-up">
         <span class="section-kicker">03 — Stack</span>
         <h2 class="section-title">Tecnologias que uso</h2>
       </div>
       <div class="skills">
-        <div class="skill-group reveal">
-          <div class="skill-head"><span class="skill-emoji">⚙️</span><h4>Back-end</h4></div>
+        <div class="skill-group" data-aos="fade-up">
+          <div class="skill-head"><i class="bi bi-server"></i><h4>Back-end</h4></div>
           <ul class="tags">
-            <li>PHP</li><li>Laravel</li><li>Node.js</li><li>Fastify</li><li>Prisma</li>
+            <li><i class="devicon-php-plain colored"></i> PHP</li>
+            <li><i class="devicon-laravel-original colored"></i> Laravel</li>
+            <li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
+            <li><i class="devicon-fastify-plain"></i> Fastify</li>
+            <li><i class="devicon-prisma-original colored"></i> Prisma</li>
           </ul>
         </div>
-        <div class="skill-group reveal">
-          <div class="skill-head"><span class="skill-emoji">🎨</span><h4>Front-end</h4></div>
+        <div class="skill-group" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-head"><i class="bi bi-palette"></i><h4>Front-end</h4></div>
           <ul class="tags">
-            <li>JavaScript</li><li>Vue.js</li><li>React</li><li>Tailwind CSS</li>
+            <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+            <li><i class="devicon-vuejs-plain colored"></i> Vue.js</li>
+            <li><i class="devicon-react-original colored"></i> React</li>
+            <li><i class="devicon-tailwindcss-original colored"></i> Tailwind CSS</li>
           </ul>
         </div>
-        <div class="skill-group reveal">
-          <div class="skill-head"><span class="skill-emoji">🗄️</span><h4>Dados &amp; DevOps</h4></div>
+        <div class="skill-group" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-head"><i class="bi bi-hdd-stack"></i><h4>Dados &amp; DevOps</h4></div>
           <ul class="tags">
-            <li>PostgreSQL</li><li>MySQL</li><li>Docker</li><li>Git</li>
+            <li><i class="devicon-postgresql-plain colored"></i> PostgreSQL</li>
+            <li><i class="devicon-mysql-original colored"></i> MySQL</li>
+            <li><i class="devicon-docker-plain colored"></i> Docker</li>
+            <li><i class="devicon-git-plain colored"></i> Git</li>
           </ul>
         </div>
       </div>
@@ -181,26 +211,26 @@
 
     <!-- CONTATO -->
     <section id="contato" class="section">
-      <div class="section-head reveal">
+      <div class="section-head" data-aos="fade-up">
         <span class="section-kicker">04 — Contato</span>
         <h2 class="section-title">Vamos conversar</h2>
       </div>
-      <p class="contact-intro reveal">
+      <p class="contact-intro" data-aos="fade-up">
         Estou aberto a projetos e oportunidades. Escolha o canal que preferir:
       </p>
       <div class="contact-links">
-        <a href="mailto:hthembwe46@gmail.com" class="contact-item reveal">
-          <span class="contact-ic">✉️</span>
+        <a href="mailto:hthembwe46@gmail.com" class="contact-item" data-aos="fade-up">
+          <span class="contact-ic"><i class="bi bi-envelope-fill"></i></span>
           <span class="contact-label">Email</span>
           <span class="contact-value">hthembwe46@gmail.com</span>
         </a>
-        <a href="https://github.com/tembue2" target="_blank" rel="noopener" class="contact-item reveal">
-          <span class="contact-ic">💻</span>
+        <a href="https://github.com/tembue2" target="_blank" rel="noopener" class="contact-item" data-aos="fade-up" data-aos-delay="100">
+          <span class="contact-ic"><i class="bi bi-github"></i></span>
           <span class="contact-label">GitHub</span>
           <span class="contact-value">github.com/tembue2</span>
         </a>
-        <a href="https://www.linkedin.com/in/sheldon-tembue-a0a84b200" target="_blank" rel="noopener" class="contact-item reveal">
-          <span class="contact-ic">🔗</span>
+        <a href="https://www.linkedin.com/in/sheldon-tembue-a0a84b200" target="_blank" rel="noopener" class="contact-item" data-aos="fade-up" data-aos-delay="200">
+          <span class="contact-ic"><i class="bi bi-linkedin"></i></span>
           <span class="contact-label">LinkedIn</span>
           <span class="contact-value">in/sheldon-tembue</span>
         </a>
@@ -210,9 +240,11 @@
 
   <footer class="footer">
     <p>&copy; <span id="ano"></span> Sheldon Tembue · Desenvolvedor de Aplicações Web</p>
-    <p class="footer-sub">Feito com HTML, CSS e JavaScript.</p>
+    <p class="footer-sub">Construído com bibliotecas open-source (Devicon, Bootstrap Icons, AOS).</p>
   </footer>
 
+  <!-- Scripts das bibliotecas -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

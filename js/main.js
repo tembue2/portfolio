@@ -19,21 +19,14 @@ if (toggle && links) {
   );
 }
 
-// Animação de revelação ao rolar
-const reveals = document.querySelectorAll(".reveal");
-if ("IntersectionObserver" in window) {
-  const io = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          io.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
-  );
-  reveals.forEach((el) => io.observe(el));
-} else {
-  reveals.forEach((el) => el.classList.add("visible"));
+// AOS — animações de revelação ao rolar (respeita prefers-reduced-motion)
+if (window.AOS) {
+  const reduzido = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  AOS.init({
+    duration: 650,
+    easing: "ease-out-cubic",
+    once: true,
+    offset: 60,
+    disable: reduzido,
+  });
 }
