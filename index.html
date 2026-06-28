@@ -5,40 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfólio de Sheldon Tembue — Desenvolvedor de Aplicações Web (PHP/Laravel, Vue, React, Node.js)." />
   <title>Sheldon Tembue — Desenvolvedor de Aplicações Web</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="hero">
+  <header class="nav-wrap">
     <nav class="nav">
-      <a href="#" class="brand">Sheldon&nbsp;Tembue</a>
-      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <a href="#" class="brand">
+        <span class="brand-dot"></span>Sheldon&nbsp;Tembue
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <ul class="nav-links">
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#contato" class="nav-cta">Contato</a></li>
       </ul>
     </nav>
-
-    <div class="hero-content">
-      <p class="hero-eyebrow">Olá, eu sou</p>
-      <h1>Sheldon <span>Tembue</span></h1>
-      <p class="hero-sub">Desenvolvedor de Aplicações Web</p>
-      <p class="hero-desc">
-        Construo sistemas completos — do banco de dados à interface — para negócios reais.
-      </p>
-      <div class="hero-actions">
-        <a href="#projetos" class="btn btn-primary">Ver projetos</a>
-        <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
-      </div>
-    </div>
   </header>
 
   <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text reveal">
+          <p class="hero-eyebrow"><span class="wave">👋</span> Olá, eu sou</p>
+          <h1>Sheldon Tembue</h1>
+          <p class="hero-sub">Desenvolvedor de Aplicações Web</p>
+          <p class="hero-desc">
+            Construo sistemas completos — do banco de dados à interface — para negócios reais,
+            com foco em código limpo e pronto para produção.
+          </p>
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+            <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
+          </div>
+          <ul class="hero-stack">
+            <li>PHP / Laravel</li>
+            <li>Vue &amp; React</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="avatar">ST</div>
+          <div class="hero-card-body">
+            <p class="hero-card-name">Sheldon Tembue</p>
+            <p class="hero-card-role">Full-Stack Web Developer</p>
+            <div class="hero-card-links">
+              <a href="https://github.com/tembue2" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+              <a href="https://www.linkedin.com/in/sheldon-tembue-a0a84b200" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+              <a href="mailto:hthembwe46@gmail.com" aria-label="Email">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- SOBRE -->
     <section id="sobre" class="section">
-      <h2 class="section-title">Sobre</h2>
-      <div class="about">
+      <div class="section-head reveal">
+        <span class="section-kicker">01 — Sobre</span>
+        <h2 class="section-title">Quem sou eu</h2>
+      </div>
+      <div class="about reveal">
         <p>
           Sou desenvolvedor de aplicações web focado em entregar sistemas completos e prontos
           para produção. Trabalho tanto no back-end quanto no front-end, usando
@@ -55,22 +90,27 @@
 
     <!-- PROJETOS -->
     <section id="projetos" class="section">
-      <h2 class="section-title">Projetos</h2>
+      <div class="section-head reveal">
+        <span class="section-kicker">02 — Portfólio</span>
+        <h2 class="section-title">Projetos em destaque</h2>
+      </div>
       <div class="grid">
 
-        <article class="card">
+        <article class="card reveal">
+          <div class="card-icon">🥖</div>
           <h3>Sistema de Gestão de Padaria</h3>
           <p class="card-desc">
             Plataforma full-stack para padarias: produção, estoque, vendas (PDV), financeiro e
-            folha de pagamento. Controle de acesso por papéis e suporte a PWA.
+            folha de pagamento, com controle de acesso por papéis e suporte a PWA.
           </p>
           <ul class="tags">
             <li>React</li><li>Node.js</li><li>Fastify</li><li>Prisma</li><li>PostgreSQL</li>
           </ul>
-          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto →</a>
+          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto <span>→</span></a>
         </article>
 
-        <article class="card">
+        <article class="card reveal">
+          <div class="card-icon">🛃</div>
           <h3>SHT — API Aduaneira</h3>
           <p class="card-desc">
             API em Laravel para gestão aduaneira/fronteiriça, com autenticação via Sanctum,
@@ -79,10 +119,11 @@
           <ul class="tags">
             <li>PHP</li><li>Laravel</li><li>MySQL</li><li>Docker</li>
           </ul>
-          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto →</a>
+          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto <span>→</span></a>
         </article>
 
-        <article class="card">
+        <article class="card reveal">
+          <div class="card-icon">📄</div>
           <h3>Gerador de Currículos (CV Online)</h3>
           <p class="card-desc">
             Aplicação PWA para criar e exportar currículos em PDF: 18 modelos, pré-visualização
@@ -91,10 +132,11 @@
           <ul class="tags">
             <li>Vue 3</li><li>Pinia</li><li>Tailwind</li><li>Vite</li>
           </ul>
-          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto →</a>
+          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto <span>→</span></a>
         </article>
 
-        <article class="card">
+        <article class="card reveal">
+          <div class="card-icon">🛒</div>
           <h3>Sistema de Loja (PDV)</h3>
           <p class="card-desc">
             Controle de estoque, ponto de venda e caixa para loja única, com travamento
@@ -103,7 +145,7 @@
           <ul class="tags">
             <li>Laravel</li><li>Vue 3</li><li>Chart.js</li><li>MySQL</li>
           </ul>
-          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto →</a>
+          <a class="card-link" href="https://github.com/tembue2" target="_blank" rel="noopener">Ver projeto <span>→</span></a>
         </article>
 
       </div>
@@ -111,22 +153,25 @@
 
     <!-- SKILLS -->
     <section id="skills" class="section">
-      <h2 class="section-title">Skills</h2>
+      <div class="section-head reveal">
+        <span class="section-kicker">03 — Stack</span>
+        <h2 class="section-title">Tecnologias que uso</h2>
+      </div>
       <div class="skills">
-        <div class="skill-group">
-          <h4>Back-end</h4>
+        <div class="skill-group reveal">
+          <div class="skill-head"><span class="skill-emoji">⚙️</span><h4>Back-end</h4></div>
           <ul class="tags">
             <li>PHP</li><li>Laravel</li><li>Node.js</li><li>Fastify</li><li>Prisma</li>
           </ul>
         </div>
-        <div class="skill-group">
-          <h4>Front-end</h4>
+        <div class="skill-group reveal">
+          <div class="skill-head"><span class="skill-emoji">🎨</span><h4>Front-end</h4></div>
           <ul class="tags">
             <li>JavaScript</li><li>Vue.js</li><li>React</li><li>Tailwind CSS</li>
           </ul>
         </div>
-        <div class="skill-group">
-          <h4>Dados &amp; DevOps</h4>
+        <div class="skill-group reveal">
+          <div class="skill-head"><span class="skill-emoji">🗄️</span><h4>Dados &amp; DevOps</h4></div>
           <ul class="tags">
             <li>PostgreSQL</li><li>MySQL</li><li>Docker</li><li>Git</li>
           </ul>
@@ -136,20 +181,28 @@
 
     <!-- CONTATO -->
     <section id="contato" class="section">
-      <h2 class="section-title">Contato</h2>
-      <p class="contact-intro">Vamos conversar? Fico feliz em receber mensagens sobre projetos e oportunidades.</p>
+      <div class="section-head reveal">
+        <span class="section-kicker">04 — Contato</span>
+        <h2 class="section-title">Vamos conversar</h2>
+      </div>
+      <p class="contact-intro reveal">
+        Estou aberto a projetos e oportunidades. Escolha o canal que preferir:
+      </p>
       <div class="contact-links">
-        <a href="mailto:hthembwe46@gmail.com" class="contact-item">
+        <a href="mailto:hthembwe46@gmail.com" class="contact-item reveal">
+          <span class="contact-ic">✉️</span>
           <span class="contact-label">Email</span>
           <span class="contact-value">hthembwe46@gmail.com</span>
         </a>
-        <a href="https://github.com/tembue2" target="_blank" rel="noopener" class="contact-item">
+        <a href="https://github.com/tembue2" target="_blank" rel="noopener" class="contact-item reveal">
+          <span class="contact-ic">💻</span>
           <span class="contact-label">GitHub</span>
           <span class="contact-value">github.com/tembue2</span>
         </a>
-        <a href="https://www.linkedin.com/in/sheldon-tembue-a0a84b200" target="_blank" rel="noopener" class="contact-item">
+        <a href="https://www.linkedin.com/in/sheldon-tembue-a0a84b200" target="_blank" rel="noopener" class="contact-item reveal">
+          <span class="contact-ic">🔗</span>
           <span class="contact-label">LinkedIn</span>
-          <span class="contact-value">in/sheldon-tembue-a0a84b200</span>
+          <span class="contact-value">in/sheldon-tembue</span>
         </a>
       </div>
     </section>
@@ -157,6 +210,7 @@
 
   <footer class="footer">
     <p>&copy; <span id="ano"></span> Sheldon Tembue · Desenvolvedor de Aplicações Web</p>
+    <p class="footer-sub">Feito com HTML, CSS e JavaScript.</p>
   </footer>
 
   <script src="js/main.js"></script>
