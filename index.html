@@ -74,8 +74,8 @@
         <div class="hero-card" data-aos="fade-up" data-aos-delay="120">
           <img class="avatar" src="https://github.com/tembue2.png" alt="Foto de Sheldon Tembue" width="120" height="120" loading="lazy" />
           <div class="hero-card-body">
-            <p class="hero-card-name">Sheldon Tembue</p>
-            <p class="hero-card-role">Desenvolvedor Full-Stack</p>
+            <span class="hero-status"><span class="status-dot"></span> Disponível para novos projetos</span>
+            <p class="hero-card-tagline">Foco em sistemas de gestão sob medida</p>
             <div class="hero-card-links">
               <a href="https://github.com/tembue2" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i> GitHub</a>
               <a href="https://www.linkedin.com/in/sheldon-tembue-a0a84b200" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i> LinkedIn</a>
@@ -119,8 +119,9 @@
           <div class="card-icon"><i class="bi bi-basket3"></i></div>
           <h3>Sistema de Gestão de Padaria</h3>
           <p class="card-desc">
-            Plataforma full-stack para padarias: produção, estoque, vendas (PDV), financeiro e
-            folha de pagamento, com controle de acesso por papéis e suporte a PWA.
+            Substitui o controle manual de uma padaria por um sistema único — do chão de
+            produção ao caixa. Acessos separados para admin, gerente e operador, e mais de
+            60 testes automatizados protegendo as regras de negócio.
           </p>
           <ul class="tags">
             <li><i class="devicon-react-original colored"></i> React</li>
@@ -138,8 +139,9 @@
           <div class="card-icon"><i class="bi bi-truck"></i></div>
           <h3>SHT — API Aduaneira</h3>
           <p class="card-desc">
-            API em Laravel para gestão aduaneira/fronteiriça, com autenticação via Sanctum,
-            exportação em PDF e infraestrutura de deploy com Docker e Render.
+            Digitaliza o registro e o acompanhamento de processos aduaneiros. API com
+            autenticação por token e geração de documentos em PDF, já preparada para produção
+            com deploy automatizado via Docker e Render.
           </p>
           <ul class="tags">
             <li><i class="devicon-php-plain colored"></i> PHP</li>
@@ -159,8 +161,9 @@
           </div>
           <h3>Gerador de Currículos (CV Online)</h3>
           <p class="card-desc">
-            Aplicação PWA para criar e exportar currículos em PDF: 18 modelos, pré-visualização
-            em tempo real, importação/exportação de dados e funcionamento offline.
+            <strong>Em produção.</strong> Tira o trabalho de montar um currículo do zero: o
+            usuário preenche, vê o resultado em tempo real e exporta um PDF compatível com ATS —
+            tudo no navegador, sem cadastro nem servidor. 18 modelos e 32 testes unitários.
           </p>
           <ul class="tags">
             <li><i class="devicon-vuejs-plain colored"></i> Vue 3</li>
@@ -178,8 +181,9 @@
           <div class="card-icon"><i class="bi bi-cart3"></i></div>
           <h3>Sistema de Loja (PDV)</h3>
           <p class="card-desc">
-            Controle de estoque, ponto de venda e caixa para loja única, com travamento
-            transacional de estoque e relatórios em PDF/CSV.
+            Evita o erro mais caro de um comércio: vender o que não há em estoque. Usa
+            travamento transacional para manter o saldo correto sob vendas simultâneas, além
+            de gerir o caixa diário e exportar relatórios em PDF/CSV.
           </p>
           <ul class="tags">
             <li><i class="devicon-laravel-original colored"></i> Laravel</li>
@@ -199,11 +203,15 @@
     <section id="skills" class="section">
       <div class="section-head" data-aos="fade-up">
         <span class="section-kicker">03 — Stack</span>
-        <h2 class="section-title">Tecnologias que uso</h2>
+        <h2 class="section-title">Como eu trabalho</h2>
       </div>
       <div class="skills">
         <div class="skill-group" data-aos="fade-up">
           <div class="skill-head"><i class="bi bi-server"></i><h4>Back-end</h4></div>
+          <p class="skill-context">
+            APIs e regras de negócio: autenticação por token, geração de PDF e testes
+            automatizados. Base da <strong>Padaria</strong>, da <strong>SHT-Aduana</strong> e da <strong>Loja</strong>.
+          </p>
           <ul class="tags">
             <li><i class="devicon-php-plain colored"></i> PHP</li>
             <li><i class="devicon-laravel-original colored"></i> Laravel</li>
@@ -214,6 +222,10 @@
         </div>
         <div class="skill-group" data-aos="fade-up" data-aos-delay="100">
           <div class="skill-head"><i class="bi bi-palette"></i><h4>Front-end</h4></div>
+          <p class="skill-context">
+            Interfaces reativas e responsivas, com gestão de estado e roteamento. Usados no
+            <strong>CV-Online</strong> (em produção), na <strong>Padaria</strong> e na <strong>Loja</strong>.
+          </p>
           <ul class="tags">
             <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
             <li><i class="devicon-vuejs-plain colored"></i> Vue.js</li>
@@ -223,6 +235,10 @@
         </div>
         <div class="skill-group" data-aos="fade-up" data-aos-delay="200">
           <div class="skill-head"><i class="bi bi-hdd-stack"></i><h4>Dados &amp; DevOps</h4></div>
+          <p class="skill-context">
+            Modelagem, migrations e transações para integridade dos dados; containerização e
+            deploy contínuo. Postgres na <strong>Padaria</strong>, MySQL na <strong>Loja</strong> e <strong>SHT</strong>.
+          </p>
           <ul class="tags">
             <li><i class="devicon-postgresql-plain colored"></i> PostgreSQL</li>
             <li><i class="devicon-mysql-original colored"></i> MySQL</li>
